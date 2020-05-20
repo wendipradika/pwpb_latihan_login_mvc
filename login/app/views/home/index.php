@@ -1,5 +1,5 @@
 <?php
-if ($_SESSION['status'] != 'login') {
+if ($_SESSION['login'] != 'user') {
     header('location:' . BASEURL);
 }
 ?>
@@ -15,7 +15,7 @@ if ($_SESSION['status'] != 'login') {
 <body>
     <center>
 
-        <h1>Selamat datang</h1>
+        <h1>Selamat datang user</h1>
         <a href="<?= BASEURL ?>/home/logout" onclick="return confirm('yakin ingin logout?')">logout</a>
     </center>
 </body>

@@ -5,7 +5,7 @@ class Home extends Controllers{
     }
 
     public function logout(){
-        unset($_SESSION['status']);
+        unset($_SESSION['login']);
         header('location:'.BASEURL);
     }
 }
